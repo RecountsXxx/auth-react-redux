@@ -1,0 +1,5 @@
+{
+  "serverPort": 3000,
+  "dbUrl" : "mongodb+srv://bohdankomp228:Kapriyan123!@blue-bank.xzsci4z.mongodb.net/?retryWrites=true&w=majority",
+  "secretKey": "bog-secret-key-202312412451251245125121"
+}
