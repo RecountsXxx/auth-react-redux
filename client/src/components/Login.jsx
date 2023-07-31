@@ -8,8 +8,10 @@ export default function Login(){
     const[password,setPassword] = useState("");
 
     const handleSubmit = async(e)=>{
-        await axios.get("/api/auth/login",{name,password})
-            .then(response=> alert(response.data))
+        e.preventDefault();
+
+        await axios.post("/api/auth/logging",{name,password})
+            .then(response=> alert(response.data.user.id))
             .catch(err => alert(err));
     }
 
