@@ -11,7 +11,7 @@ export default function Login(){
         e.preventDefault();
 
         await axios.post("/api/auth/logging",{name,password})
-            .then(response=> alert(response.data.user.id))
+            .then(response=> alert(response.data.message))
             .catch(err => alert(err));
     }
 

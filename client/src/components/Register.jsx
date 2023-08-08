@@ -12,6 +12,7 @@ export default function Register(){
 
         await axios.post("/api/auth/registration",{name,password})
             .then((response)=>{
+                //сделать ошибки
                 alert(response.data.message);
                 if(response.data.errors){
                     alert(...response.data.errors);
